@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=26&duration=2800&pause=900&color=4CDFE8&center=true&vCenter=true&width=650&lines=NEMI+%2F%2F+SYSTEM+ONLINE;B.Tech+CSE+%E2%80%94+Cyber+Security;Building+FRIDAY+%2F+NEMIII;CTF+%2B+Pentest+%2B+Quantum+Curious" alt="Typing SVG" />
+<img src="https://raw.githubusercontent.com/neminorniel24-droid/neminorniel24-droid/main/assets/hud-banner.svg" width="100%" alt="HUD banner" />
+
+<br><br>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=26&duration=2800&pause=900&color=4CDFE8&center=true&vCenter=true&width=650&lines=NEMIN+ORNIEL;B.Tech+CSE+%E2%80%94+Cyber+Security;Building+FRIDAY+%2F+NEMIII;CTF+%2B+Pentest+%2B+Quantum+Curious" alt="Typing SVG" />
 
 <br>
 
@@ -15,7 +19,7 @@
 
 ```
 > whoami
-Nemin Orniel D — B.Tech CSE (Cyber Security), Karunya Institute of Tech, 2025–2029
+Nemin Orniel — B.Tech CSE (Cyber Security), Karunya Institute of Tech, 2025–2029
 Chennai, India
 
 > current_ops
@@ -24,8 +28,8 @@ Chennai, India
 - Certs: JWPT · Oracle Fusion AI Agent Studio · Cisco NetAcad · RH124
 
 > building
-FRIDAY / NEMIII — voice-controlled PC assistant (FastAPI + WSL + holographic HUD)
-QwiSense — quantum-enhanced WiFi human sensing (PennyLane + Qiskit)
+FRIDAY / NEMIII — voice-controlled PC assistant, FastAPI core + holographic HUD
+QwiSense — quantum-enhanced WiFi human sensing, PennyLane + Qiskit
 ```
 
 <br>
@@ -95,8 +99,4 @@ QwiSense — quantum-enhanced WiFi human sensing (PennyLane + Qiskit)
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0B1120?style=for-the-badge&logo=linkedin&logoColor=4CDFE8)](#)
 [![Mail](https://img.shields.io/badge/-Contact-0B1120?style=for-the-badge&logo=gmail&logoColor=FFB454)](#)
 
-</div>
-
-<div align="center">
-<sub>terminal idle — awaiting next commit</sub>
 </div>
