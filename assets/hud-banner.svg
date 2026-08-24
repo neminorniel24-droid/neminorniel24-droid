@@ -1,70 +1,40 @@
-<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="160" viewBox="0 0 900 160" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <radialGradient id="core" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#4CDFE8" stop-opacity="0.9"/>
-      <stop offset="55%" stop-color="#4CDFE8" stop-opacity="0.25"/>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4CDFE8" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#4CDFE8" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="vign" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#0B1120" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#0B1120" stop-opacity="0.55"/>
     </radialGradient>
   </defs>
 
-  <rect width="900" height="260" fill="#0B1120"/>
+  <rect width="900" height="160" fill="#0B1120"/>
 
-  <!-- web / plexus network -->
-  <g stroke="#1E2E45" stroke-width="1" opacity="0.8">
-    <line x1="40" y1="30" x2="220" y2="90"/>
-    <line x1="220" y1="90" x2="140" y2="200"/>
-    <line x1="140" y1="200" x2="40" y2="30"/>
-    <line x1="220" y1="90" x2="380" y2="40"/>
-    <line x1="380" y1="40" x2="450" y2="130"/>
-    <line x1="450" y1="130" x2="220" y2="90"/>
-    <line x1="450" y1="130" x2="620" y2="50"/>
-    <line x1="620" y1="50" x2="700" y2="150"/>
-    <line x1="700" y1="150" x2="450" y2="130"/>
-    <line x1="700" y1="150" x2="860" y2="60"/>
-    <line x1="860" y1="60" x2="880" y2="200"/>
-    <line x1="880" y1="200" x2="700" y2="150"/>
-    <line x1="140" y1="200" x2="330" y2="230"/>
-    <line x1="330" y1="230" x2="450" y2="130"/>
-    <line x1="330" y1="230" x2="600" y2="220"/>
-    <line x1="600" y1="220" x2="700" y2="150"/>
-    <animateTransform attributeName="transform" type="translate" values="0 0; 4 -3; 0 0" dur="9s" repeatCount="indefinite"/>
-  </g>
-
-  <g fill="#4CDFE8">
-    <circle cx="220" cy="90" r="2.4"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="450" cy="130" r="2.8"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="700" cy="150" r="2.4"><animate attributeName="opacity" values="1;0.3;1" dur="3.4s" repeatCount="indefinite"/></circle>
-    <circle cx="860" cy="60" r="2" fill="#FFB454"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="140" cy="200" r="2" fill="#FFB454"><animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/></circle>
-  </g>
-
-  <!-- arc reactor core, centered -->
-  <g transform="translate(450 130)">
-    <circle r="70" fill="url(#core)"/>
-
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
-      <circle r="58" fill="none" stroke="#4CDFE8" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="22 8 22 8 22 100"/>
-    </g>
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="10s" repeatCount="indefinite"/>
-      <circle r="44" fill="none" stroke="#FFB454" stroke-width="2" stroke-linecap="round" stroke-dasharray="14 10 14 10 14 80"/>
-    </g>
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
-      <circle r="30" fill="none" stroke="#9B8CFF" stroke-width="1.5" stroke-dasharray="6 6"/>
-    </g>
-
-    <circle r="16" fill="#0B1120" stroke="#4CDFE8" stroke-width="1.5"/>
-    <circle r="6" fill="#4CDFE8">
-      <animate attributeName="r" values="5;7;5" dur="2s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+  <!-- quiet centered pulse ring -->
+  <g transform="translate(450 80)">
+    <circle r="34" fill="url(#glow)"/>
+    <circle r="26" fill="none" stroke="#4CDFE8" stroke-width="1.2" opacity="0.8">
+      <animate attributeName="r" values="24;30;24" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="4" fill="#4CDFE8">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
     </circle>
   </g>
 
-  <rect width="900" height="260" fill="url(#vign)"/>
+  <!-- small spider on a single thread, top-right corner -->
+  <g transform="translate(846 0)">
+    <line x1="0" y1="0" x2="0" y2="60" stroke="#2A3B54" stroke-width="1"/>
+    <g>
+      <animateTransform attributeName="transform" type="translate" values="0,10; 0,46; 0,10" dur="6s" repeatCount="indefinite" keyTimes="0;0.5;1" calcMode="spline" keySplines="0.4 0 0.6 1;0.4 0 0.6 1"/>
+      <g fill="#6B8299">
+        <ellipse cx="0" cy="0" rx="4" ry="3.2"/>
+        <circle cx="0" cy="-4.5" r="2.2"/>
+        <line x1="-4" y1="-1" x2="-8" y2="-4" stroke="#6B8299" stroke-width="0.8"/>
+        <line x1="-4" y1="1" x2="-8" y2="3" stroke="#6B8299" stroke-width="0.8"/>
+        <line x1="-3" y1="2.5" x2="-6" y2="6" stroke="#6B8299" stroke-width="0.8"/>
+        <line x1="4" y1="-1" x2="8" y2="-4" stroke="#6B8299" stroke-width="0.8"/>
+        <line x1="4" y1="1" x2="8" y2="3" stroke="#6B8299" stroke-width="0.8"/>
+        <line x1="3" y1="2.5" x2="6" y2="6" stroke="#6B8299" stroke-width="0.8"/>
+      </g>
+    </g>
+  </g>
 </svg>

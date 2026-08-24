@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/neminorniel24-droid/neminorniel24-droid/main/assets/hud-banner.svg" width="100%" alt="HUD banner" />
+<img src="https://raw.githubusercontent.com/neminorniel24-droid/neminorniel24-droid/main/assets/hud-banner.svg" width="100%" alt="banner" />
 
 <br><br>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=26&duration=2800&pause=900&color=4CDFE8&center=true&vCenter=true&width=650&lines=NEMIN+ORNIEL;B.Tech+CSE+%E2%80%94+Cyber+Security;Building+FRIDAY+%2F+NEMIII" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=24&duration=3000&pause=1000&color=4CDFE8&center=true&vCenter=true&width=600&lines=NEMIN+ORNIEL;building+things+that+don%27t+exist+yet" alt="Typing SVG" />
 
 <br>
 
