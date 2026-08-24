@@ -1,0 +1,119 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="35%" r="85%">
+      <stop offset="0%" stop-color="#0d0f1a"/>
+      <stop offset="55%" stop-color="#07080f"/>
+      <stop offset="100%" stop-color="#020204"/>
+    </radialGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3c4"/>
+      <stop offset="35%" stop-color="#f2b705"/>
+      <stop offset="70%" stop-color="#d62828"/>
+      <stop offset="100%" stop-color="#d62828" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffe08a"/>
+      <stop offset="55%" stop-color="#f2b705"/>
+      <stop offset="100%" stop-color="#d62828"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="4.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="revealClip">
+      <rect x="65" y="100" width="0" height="62">
+        <animate attributeName="width" from="0" to="565" begin="1.6s" dur="1.3s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <rect width="900" height="260" fill="url(#bg)"/>
+
+  <!-- faint drawn web-lines, spun out from the core once on load -->
+  <g stroke="#f2b70555" stroke-width="1" fill="none">
+    <path d="M 90 40 Q 300 10 610 60" stroke-dasharray="600" stroke-dashoffset="600">
+      <animate attributeName="stroke-dashoffset" from="600" to="0" begin="0.1s" dur="1.8s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    </path>
+    <path d="M 60 130 Q 320 150 480 90" stroke-dasharray="520" stroke-dashoffset="520">
+      <animate attributeName="stroke-dashoffset" from="520" to="0" begin="0.35s" dur="1.8s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    </path>
+    <path d="M 40 220 Q 260 240 430 190 T 780 210" stroke-dasharray="760" stroke-dashoffset="760">
+      <animate attributeName="stroke-dashoffset" from="760" to="0" begin="0.5s" dur="2s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    </path>
+    <path d="M 700 30 Q 800 90 860 200" stroke-dasharray="330" stroke-dashoffset="330">
+      <animate attributeName="stroke-dashoffset" from="330" to="0" begin="0.25s" dur="1.4s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+    </path>
+    <path d="M 630 130 Q 700 160 760 130" stroke-dasharray="180" stroke-dashoffset="180" opacity="0.7">
+      <animate attributeName="stroke-dashoffset" from="180" to="0" begin="0.6s" dur="1.1s" fill="freeze"/>
+    </path>
+    <path d="M 630 130 Q 700 100 780 115" stroke-dasharray="200" stroke-dashoffset="200" opacity="0.7">
+      <animate attributeName="stroke-dashoffset" from="200" to="0" begin="0.7s" dur="1.1s" fill="freeze"/>
+    </path>
+  </g>
+
+  <!-- drifting particles -->
+  <g fill="#f2b705">
+    <circle cx="120" cy="230" r="1.6" opacity="0.7">
+      <animate attributeName="cy" values="230;30;230" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.8;0" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="260" cy="245" r="1.3" opacity="0.6">
+      <animate attributeName="cy" values="245;20;245" dur="11s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="11s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="740" cy="235" r="1.5" opacity="0.6">
+      <animate attributeName="cy" values="235;15;235" dur="10s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="10s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="250" r="1.2" opacity="0.5">
+      <animate attributeName="cy" values="250;40;250" dur="8s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="8s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="460" cy="250" r="1.1" opacity="0.5">
+      <animate attributeName="cy" values="250;60;250" dur="12s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="12s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- reactor core, top-right, pulsing -->
+  <g transform="translate(795,58)" filter="url(#glow)">
+    <circle r="0" fill="url(#core)">
+      <animate attributeName="r" values="0;26;22;25;22" keyTimes="0;0.15;0.4;0.7;1" dur="4s" begin="0.4s" fill="freeze"/>
+    </circle>
+    <circle r="0" fill="none" stroke="#f2b705" stroke-width="1.4" opacity="0.8">
+      <animate attributeName="r" values="0;38;38" keyTimes="0;0.2;1" dur="4s" begin="0.4s" fill="freeze"/>
+      <animate attributeName="opacity" values="0.9;0.35;0.9" dur="3s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="0" fill="none" stroke="#d6282888" stroke-width="1" stroke-dasharray="3 5">
+      <animate attributeName="r" values="0;50;50" keyTimes="0;0.25;1" dur="4s" begin="0.4s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- name, typewriter reveal -->
+  <g clip-path="url(#revealClip)">
+    <text x="70" y="150" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="url(#titleGrad)" letter-spacing="1">NEMIN ORNIEL</text>
+  </g>
+  <rect x="68" y="112" width="3" height="42" fill="#f2b705" opacity="0">
+    <animate attributeName="opacity" values="0;1;0;1;0;1;0" dur="0.9s" begin="1.6s" fill="freeze"/>
+    <animate attributeName="x" values="68;628" begin="1.6s" dur="1.3s" fill="freeze" calcMode="spline" keySplines="0.22 1 0.36 1"/>
+  </rect>
+
+  <!-- subtitle -->
+  <text x="72" y="188" font-family="Consolas, 'Courier New', monospace" font-size="15" fill="#9fb3c8" opacity="0">
+    &gt; systems architect · security-minded · builds things that work
+    <animate attributeName="opacity" from="0" to="1" begin="3.1s" dur="0.8s" fill="freeze"/>
+  </text>
+
+  <!-- corner HUD brackets -->
+  <g stroke="#f2b70599" stroke-width="1.4" fill="none" opacity="0">
+    <path d="M18 18 L18 40 M18 18 L40 18"/>
+    <path d="M882 18 L882 40 M882 18 L860 18"/>
+    <path d="M18 242 L18 220 M18 242 L40 242"/>
+    <path d="M882 242 L882 220 M882 242 L860 242"/>
+    <animate attributeName="opacity" from="0" to="1" begin="0.1s" dur="0.6s" fill="freeze"/>
+  </g>
+</svg>

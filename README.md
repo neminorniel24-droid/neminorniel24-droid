@@ -1,44 +1,29 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/neminorniel24-droid/neminorniel24-droid/main/assets/hud-banner.svg" width="100%" alt="banner" />
+<img src="./banner-top.svg" width="100%" alt="banner" />
 
-<br><br>
+<br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=24&duration=3000&pause=1000&color=4CDFE8&center=true&vCenter=true&width=600&lines=NEMIN+ORNIEL;building+things+that+don%27t+exist+yet" alt="Typing SVG" />
+<a href="https://github.com/neminorniel24-droid">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&size=20&pause=1500&color=F2B705&center=true&vCenter=true&width=650&lines=With+great+code+comes+great+responsibility.;Genius+helps.+Persistence+built+this.;Not+the+strongest%2C+not+the+smartest+%E2%80%94+just+the+one+who+ships.;Small+steps.+Big+fixes.+That's+the+job.;Suit+up.+Debug.+Repeat." alt="typing-svg" />
+</a>
 
-<br>
+<br/><br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=neminorniel24-droid&color=4CDFE8&style=flat-square&label=PROFILE+VIEWS)
-![Followers](https://img.shields.io/github/followers/neminorniel24-droid?color=FFB454&style=flat-square&label=FOLLOWERS)
+<img src="https://komarev.com/ghpvc/?username=neminorniel24-droid&label=PROFILE%20VIEWS&color=d62828&style=for-the-badge&labelColor=0d0f1a" alt="profile views"/>
+<img src="https://img.shields.io/github/followers/neminorniel24-droid?label=FOLLOWERS&style=for-the-badge&color=f2b705&labelColor=0d0f1a" alt="followers"/>
 
-<br><br>
+<br/><br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=neminorniel24-droid&hide_border=true&background=0B1120&ring=4CDFE8&fire=FFB454&currStreakLabel=4CDFE8&sideLabels=C7D3E0&sideNums=C7D3E0&dates=6B8299" />
+<img src="https://github-readme-stats.vercel.app/api?username=neminorniel24-droid&show_icons=true&theme=transparent&hide_border=true&title_color=f2b705&text_color=9fb3c8&icon_color=d62828&bg_color=00000000" width="48%" alt="stats"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=neminorniel24-droid&theme=transparent&hide_border=true&ring=d62828&fire=f2b705&currStreakLabel=f2b705&background=00000000" width="48%" alt="streak"/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=neminorniel24-droid&theme=react-dark&bg_color=0B1120&color=4CDFE8&line=FFB454&point=E8EEF5&area=true&hide_border=true" width="97%" />
+<br/>
 
-<br><br>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=neminorniel24-droid&bg_color=00000000&color=9fb3c8&line=d62828&point=f2b705&hide_border=true&area=true" width="97%" alt="activity graph"/>
 
-<b>nemin-s-FRIDAY</b><br>
-<img src="https://img.shields.io/github/stars/neminorniel24-droid/nemin-s-FRIDAY?style=flat-square&color=4CDFE8&labelColor=0B1120" />
-<img src="https://img.shields.io/github/languages/top/neminorniel24-droid/nemin-s-FRIDAY?style=flat-square&color=FFB454&labelColor=0B1120" />
+<br/><br/>
 
-<br><br>
-
-<b>qwisense</b><br>
-<img src="https://img.shields.io/github/stars/neminorniel24-droid/qwisense?style=flat-square&color=4CDFE8&labelColor=0B1120" />
-<img src="https://img.shields.io/github/languages/top/neminorniel24-droid/qwisense?style=flat-square&color=FFB454&labelColor=0B1120" />
-
-<br><br>
-
-<b>honeypot-via-telegram-alerter</b><br>
-<img src="https://img.shields.io/github/stars/neminorniel24-droid/honeypot-via-telegram-alerter?style=flat-square&color=4CDFE8&labelColor=0B1120" />
-<img src="https://img.shields.io/github/languages/top/neminorniel24-droid/honeypot-via-telegram-alerter?style=flat-square&color=FFB454&labelColor=0B1120" />
-
-<br><br>
-
-<b>INR-radar</b><br>
-<img src="https://img.shields.io/github/stars/neminorniel24-droid/INR-radar?style=flat-square&color=4CDFE8&labelColor=0B1120" />
-<img src="https://img.shields.io/github/languages/top/neminorniel24-droid/INR-radar?style=flat-square&color=FFB454&labelColor=0B1120" />
+<img src="./banner-bottom.svg" width="100%" alt="footer" />
 
 </div>
