@@ -1,23 +1,46 @@
 <div align="center">
 
-<img src="./banner-top.svg" width="100%" alt="banner" />
+<img src="./assets/spider-network.svg" alt="Nemin Orniel animated systems network" width="100%">
 
-<img src="./tagline-ticker.svg" alt="tagline" />
+### `> Still debugging life, one commit at a time.`
 
-<img src="./divider.svg" width="90%" alt="" />
+**systems architecture · security · automation · AI · building**
 
-<p>
-<img src="https://komarev.com/ghpvc/?username=neminorniel24-droid&label=PROFILE%20VIEWS&color=d62828&style=for-the-badge&labelColor=0d0f1a" alt="profile views" height="28"/>
-&nbsp;
-<img src="https://img.shields.io/github/followers/neminorniel24-droid?label=FOLLOWERS&style=for-the-badge&color=f2b705&labelColor=0d0f1a" alt="followers" height="28"/>
-</p>
+<br>
 
-<img src="./divider.svg" width="90%" alt="" />
+<a href="https://github.com/neminorniel24-droid?tab=repositories">PROJECTS</a>
+&nbsp; • &nbsp;
+<a href="https://github.com/neminorniel24-droid?tab=activity">ACTIVITY</a>
+&nbsp; • &nbsp;
+<a href="https://github.com/neminorniel24-droid">GITHUB</a>
 
-<img src="./stack-strip.svg" width="90%" alt="stack" />
+</div>
 
-<img src="./divider.svg" width="90%" alt="" />
+---
 
-<img src="./banner-bottom.svg" width="100%" alt="footer" />
+## `SYSTEM STATUS`
+
+```text
+[ ONLINE ]  systems
+[ ACTIVE ]  security research
+[ BUILD  ]  automation + AI
+[ SHIP   ]  open-source experiments
+```
+
+### `CURRENT MODE`
+
+> Build useful things. Break assumptions. Secure what matters. Ship the fix.
+
+<details>
+<summary><b>NETWORK MAP</b></summary>
+
+The animated graph above is intentionally built as an SVG rather than a static screenshot.  
+The nodes, travelling packets, spider core and activity signal animate inside the README.
+
+</details>
+
+<div align="center">
+
+`████████████████████████████████████████` **SYSTEMS ONLINE**
 
 </div>

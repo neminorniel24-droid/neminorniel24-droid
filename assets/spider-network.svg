@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+<defs>
+  <radialGradient id="bg" cx="50%" cy="43%" r="75%">
+    <stop offset="0" stop-color="#101826"/><stop offset=".55" stop-color="#070b12"/><stop offset="1" stop-color="#030509"/>
+  </radialGradient>
+  <radialGradient id="core"><stop stop-color="#fff" stop-opacity="1"/><stop offset=".25" stop-color="#ffbf36"/><stop offset=".65" stop-color="#ff3d2e"/><stop offset="1" stop-color="#ff3d2e" stop-opacity="0"/></radialGradient>
+  <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#ffd65a"/><stop offset=".5" stop-color="#ff8a00"/><stop offset="1" stop-color="#ff3b30"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
+  <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+    <path d="M48 0H0V48" fill="none" stroke="#263247" stroke-opacity=".28"/>
+  </pattern>
+  <style>
+    .pulse{animation:pulse 2.8s ease-in-out infinite}
+    .pulse2{animation:pulse 4s ease-in-out infinite .7s}
+    .orbit{animation:orbit 16s linear infinite;transform-origin:600px 430px}
+    .orbit2{animation:orbit 24s linear infinite reverse;transform-origin:600px 430px}
+    .dash{stroke-dasharray:8 18;animation:dash 2.5s linear infinite}
+    .dash2{stroke-dasharray:2 15;animation:dash 4s linear infinite reverse}
+    .float{animation:float 5s ease-in-out infinite}
+    .float2{animation:float 6s ease-in-out infinite 1s}
+    @keyframes pulse{0%,100%{opacity:.55;transform:scale(.92)}50%{opacity:1;transform:scale(1.08)}}
+    @keyframes orbit{to{transform:rotate(360deg)}}
+    @keyframes dash{to{stroke-dashoffset:-120}}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+  </style>
+</defs>
+
+<rect width="1200" height="900" rx="28" fill="url(#bg)"/>
+<rect x="22" y="22" width="1156" height="856" rx="22" fill="url(#grid)" opacity=".55"/>
+<rect x="22" y="22" width="1156" height="856" rx="22" fill="none" stroke="#293446"/>
+
+<!-- HUD corners -->
+<g stroke="#ffae18" stroke-width="2" opacity=".8">
+ <path d="M55 105V55H105M1095 55h50v50M55 795v50h50M1095 845h50v-50"/>
+</g>
+
+<!-- Header -->
+<g font-family="monospace">
+ <text x="65" y="82" fill="#7f91ad" font-size="15" letter-spacing="4">NEMIN ORNIEL // PERSONAL SYSTEM</text>
+ <text x="1135" y="82" fill="#65f3d0" font-size="13" text-anchor="end">● SYSTEM ONLINE</text>
+ <text x="65" y="155" fill="url(#gold)" font-size="54" font-weight="700">NEMIN ORNIEL</text>
+ <text x="68" y="185" fill="#a9b6ca" font-size="17">systems architect · security-minded · builds things that work</text>
+</g>
+
+<!-- ambient rings -->
+<g fill="none" opacity=".25">
+ <circle cx="600" cy="430" r="275" stroke="#ff8a00" class="orbit"/>
+ <circle cx="600" cy="430" r="320" stroke="#39d9ff" stroke-dasharray="3 20" class="orbit2"/>
+ <ellipse cx="600" cy="430" rx="440" ry="180" stroke="#ff3b30" stroke-dasharray="2 18"/>
+</g>
+
+<!-- network -->
+<g fill="none" stroke-linecap="round">
+ <g stroke="#e9a61c" stroke-opacity=".42">
+  <path d="M600 430L300 260L130 360"/>
+  <path d="M600 430L880 240L1060 330"/>
+  <path d="M600 430L315 590L140 675"/>
+  <path d="M600 430L885 585L1055 680"/>
+  <path d="M600 430L600 205"/>
+  <path d="M600 430L600 650"/>
+  <path d="M300 260L130 360L315 590L140 675"/>
+  <path d="M880 240L1060 330L885 585L1055 680"/>
+ </g>
+ <g stroke="#58d9ff" stroke-width="1.7" opacity=".65" class="dash">
+  <path d="M600 430L300 260L130 360"/>
+  <path d="M600 430L880 240L1060 330"/>
+  <path d="M600 430L315 590L140 675"/>
+  <path d="M600 430L885 585L1055 680"/>
+ </g>
+</g>
+
+<!-- travelling packets -->
+<g fill="#fff" filter="url(#glow)">
+ <circle r="4" class="pulse"><animateMotion dur="3.2s" repeatCount="indefinite" path="M600 430L300 260L130 360"/></circle>
+ <circle r="3" class="pulse2"><animateMotion dur="4.1s" repeatCount="indefinite" path="M600 430L885 585L1055 680"/></circle>
+ <circle r="3" class="pulse"><animateMotion dur="3.7s" repeatCount="indefinite" path="M600 430L880 240L1060 330"/></circle>
+</g>
+
+<!-- nodes -->
+<g fill="#0a1019" stroke-width="2">
+ <g stroke="#65f3d0"><circle cx="130" cy="360" r="11" class="pulse"/><circle cx="300" cy="260" r="8"/></g>
+ <g stroke="#ffb52e"><circle cx="1060" cy="330" r="11" class="pulse2"/><circle cx="880" cy="240" r="8"/></g>
+ <g stroke="#ff5364"><circle cx="140" cy="675" r="11" class="pulse2"/><circle cx="315" cy="590" r="8"/></g>
+ <g stroke="#a66cff"><circle cx="1055" cy="680" r="11" class="pulse"/><circle cx="885" cy="585" r="8"/></g>
+ <g stroke="#49b8ff"><circle cx="600" cy="205" r="10"/><circle cx="600" cy="650" r="10"/></g>
+</g>
+
+<!-- labels -->
+<g font-family="monospace">
+ <g class="float"><rect x="75" y="290" width="210" height="58" rx="10" fill="#0b111b" stroke="#65f3d0"/><text x="95" y="316" fill="#65f3d0" font-size="14">SYSTEMS</text><text x="95" y="336" fill="#8190a7" font-size="11">architecture / design</text></g>
+ <g class="float2"><rect x="885" y="260" width="235" height="58" rx="10" fill="#0b111b" stroke="#ffb52e"/><text x="905" y="286" fill="#ffb52e" font-size="14">AUTOMATION</text><text x="905" y="306" fill="#8190a7" font-size="11">tools / workflows</text></g>
+ <g class="float"><rect x="70" y="690" width="220" height="58" rx="10" fill="#0b111b" stroke="#ff5364"/><text x="90" y="716" fill="#ff5364" font-size="14">SECURITY</text><text x="90" y="736" fill="#8190a7" font-size="11">offense / defense</text></g>
+ <g class="float2"><rect x="885" y="695" width="240" height="58" rx="10" fill="#0b111b" stroke="#a66cff"/><text x="905" y="721" fill="#a66cff" font-size="14">AI + BUILDING</text><text x="905" y="741" fill="#8190a7" font-size="11">experiments / shipping</text></g>
+</g>
+
+<!-- spider -->
+<g transform="translate(600 430)">
+ <circle r="110" fill="#ff4b2e" opacity=".10" filter="url(#soft)" class="pulse"/>
+ <circle r="72" fill="#05080d" stroke="#ff9f19" stroke-width="2" class="pulse2"/>
+ <circle r="48" fill="#0d141d" stroke="#526176"/>
+ <!-- body -->
+ <ellipse cx="0" cy="2" rx="27" ry="41" fill="#151d28" stroke="#c8d2df"/>
+ <ellipse cx="0" cy="-39" rx="22" ry="20" fill="#0a1018" stroke="#8794a7"/>
+ <circle cx="-8" cy="-43" r="5" fill="#ff4b2e" filter="url(#glow)"/>
+ <circle cx="8" cy="-43" r="5" fill="#ff4b2e" filter="url(#glow)"/>
+ <circle cx="0" cy="8" r="10" fill="url(#core)" filter="url(#glow)" class="pulse"/>
+ <!-- legs -->
+ <g fill="none" stroke="#aeb9c8" stroke-width="4" stroke-linecap="round">
+  <path d="M-18 -15L-58 -42L-92 -35"/>
+  <path d="M-22 -3L-64 -5L-102 20"/>
+  <path d="M-20 13L-58 33L-88 65"/>
+  <path d="M-15 27L-42 58L-55 92"/>
+  <path d="M18 -15L58 -42L92 -35"/>
+  <path d="M22 -3L64 -5L102 20"/>
+  <path d="M20 13L58 33L88 65"/>
+  <path d="M15 27L42 58L55 92"/>
+ </g>
+</g>
+
+<!-- lower activity -->
+<g transform="translate(65 790)" font-family="monospace">
+ <text x="0" y="-18" fill="#718199" font-size="12" letter-spacing="3">LIVE ACTIVITY SIGNAL</text>
+ <path d="M0 5 C35 -18 55 30 90 3 S145 -22 180 8 S230 27 270 0 S330 -18 370 7 S430 28 470 0 S535 -20 575 7 S635 27 680 2 S740 -17 780 6 S840 27 880 0 S940 -20 980 7 S1040 28 1070 3" fill="none" stroke="url(#gold)" stroke-width="3" class="dash"/>
+ <text x="0" y="45" fill="#65f3d0" font-size="12">commits</text>
+ <text x="82" y="45" fill="#7f91ad" font-size="12">build → test → secure → ship → repeat</text>
+</g>
+</svg>
