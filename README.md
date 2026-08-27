@@ -1,46 +1,47 @@
 <div align="center">
 
-<img src="./assets/spider-network.svg" alt="Nemin Orniel animated systems network" width="100%">
+<img src="./cyber-spider-hero.png" alt="Nemin Orniel cyber spider profile" width="100%">
 
-### `> Still debugging life, one commit at a time.`
+</div>
 
-**systems architecture · security · automation · AI · building**
+## `SYSTEM / NEMIN ORNIEL`
 
-<br>
+```text
+systems architecture   security   automation   AI/ML   hardware
+```
 
-<a href="https://github.com/neminorniel24-droid?tab=repositories">PROJECTS</a>
-&nbsp; • &nbsp;
-<a href="https://github.com/neminorniel24-droid?tab=activity">ACTIVITY</a>
-&nbsp; • &nbsp;
-<a href="https://github.com/neminorniel24-droid">GITHUB</a>
+I build software and systems, experiment with security, and turn ideas into working projects.
+
+### `NOW`
+
+```text
+● online
+
+projects        → building
+security        → researching
+automation      → shipping
+experiments     → running
+```
+
+### `ACTIVITY`
+
+[![GitHub Streak](https://streak-stats.demolab.com?user=neminorniel24-droid&theme=dark&hide_border=true&background=080b12)](https://git.io/streak-stats)
+
+<div align="center">
+
+<a href="https://github.com/neminorniel24-droid?tab=repositories">
+  <img src="https://img.shields.io/badge/PROJECTS-111827?style=for-the-badge&logo=github&logoColor=white" />
+</a>
+<a href="https://github.com/neminorniel24-droid?tab=activity">
+  <img src="https://img.shields.io/badge/ACTIVITY-111827?style=for-the-badge&logo=github&logoColor=white" />
+</a>
 
 </div>
 
 ---
 
-## `SYSTEM STATUS`
-
-```text
-[ ONLINE ]  systems
-[ ACTIVE ]  security research
-[ BUILD  ]  automation + AI
-[ SHIP   ]  open-source experiments
-```
-
-### `CURRENT MODE`
-
-> Build useful things. Break assumptions. Secure what matters. Ship the fix.
-
-<details>
-<summary><b>NETWORK MAP</b></summary>
-
-The animated graph above is intentionally built as an SVG rather than a static screenshot.  
-The nodes, travelling packets, spider core and activity signal animate inside the README.
-
-</details>
-
 <div align="center">
 
-`████████████████████████████████████████` **SYSTEMS ONLINE**
+`WEB / SYSTEMS / SECURITY / BUILD`
 
 </div>
